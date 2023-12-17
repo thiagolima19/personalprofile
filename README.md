@@ -6,14 +6,9 @@ Page created to fulfill the final course criteria at the end of the term.
 
 <p align="center">
   <a href="#-tecnologias">Technologies</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#-projeto">Projects</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#-projeto">Projects</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 </p>
 
-<br>
-
-<p align="center">
-  <img alt="Personal Webpage" src=".github/preview.png" width="100%">
-</p>
 
 ## 🚀 Technologies
 

@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My portifolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;700&family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="aboutme.css" />
+  </head>
+  <body>
+    <!-- -------header section--------- -->
+    <!-- <div id="header"> -->
+      <div class="container">
+        <nav>
+          <span></span>
+          <ul id="sidemenu">
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./aboutme.html">About</a></li>
+            <li><a href="./hobbies.html">Hobbies</a></li>
+            <li><a href="./htmlcheat.html">HTML</a></li>
+            <li><a href="./csscheat.html">CSS</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <ion-icon class="fas" name="close" onclick="closemenu()"></ion-icon>
+          </ul>
+          <ion-icon class="fas" name="menu" onclick="openmenu()"></ion-icon>
+        </nav>
+      </div>
+    <!-- </div> -->
+    <!-- ---about---- -->
+    <div id="about">
+      <div class="conteiner">
+        <div class="row">
+          <div class="about-col-1">
+            <img
+              src="./assets/thiago_motreal.jpeg"
+              alt="This is smilin and in the back is the Motreal City."
+            />
+          </div>
+          <div class="about-col-2">
+            <h1 class="subtitle">About me</h1>
+            <p>
+              Since I graduated in 2013, I worked in the field of designing
+              physical exercise programs for various populations. I have
+              experience in the weight room as well as being a personal trainer.
+              In addition to my undergraduate degree in Physical Education from
+              UFPE, I am also a specialist in Exercise Physiology from Estacio
+              de Sa University and hold a Master's Degree in Physical Education
+              from the Federal University of Pernambuco. <br /><br />
+
+              In recent times, my thirst for exploring new cultures and learning
+              new skills drove me to join an English language exchange program
+              in Ireland. After spending a year and a half on the Emerald
+              Island, I can confidently say that I have become a more resilient
+              person, in addition to having significantly improved my
+              proficiency in English. <br /><br />
+
+              I am currently pursuing an old dream of working in the Information
+              Technology field and living in an English-speaking country,
+              specifically Canada. The time has finally come for me to make this
+              dream a reality. In just a few years, I will be joining a group of
+              individuals who rely on technology for both work and leisure.
+            </p>
+            <div class="tab-titles">
+              <p class="tab-links active-link" onclick="opentab('skills')">
+                Skils
+              </p>
+              <p class="tab-links" onclick="opentab('experience')">
+                Experience
+              </p>
+              <p class="tab-links" onclick="opentab('education')">Education</p>
+            </div>
+            <div class="tab-contents active-tab" id="skills">
+              <ul>
+                <li>
+                  <span>Customer Service</span><br />Work in a fast-paced place
+                  delivering high quality service
+                </li>
+                <li>
+                  <span>Flexible and adaptable</span><br />Managing schedules
+                  and deadlines
+                </li>
+                <li>
+                  <span>Exercise fitness training</span><br />Customized and
+                  individualized exercise trainament
+                </li>
+                <li>
+                  <span>Software and Web develoment</span><br />Starting build
+                  some websites and programmes
+                </li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="experience">
+              <ul>
+                <li>
+                  <span>Software develoment Student</span><br />"Acquiring
+                  skills through class projects."
+                </li>
+                <li>
+                  <span>Waiter/Server</span><br />During my English interchange
+                  Program in Ireland
+                </li>
+                <li>
+                  <span>Personal Trainer</span><br />Private fitness
+                  instructions based on the client's needs.
+                </li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="education">
+              <ul>
+                <li><span>2023-Now</span><br />Software develoment Diploma</li>
+                <li>
+                  <span>2016/2018</span><br />Master degree in Physical
+                  Education
+                </li>
+                <li>
+                  <span>2009/2013</span><br />Bachelor in Physical Education
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- ---------contatc---------- -->
+    <div id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="contact">
+            <h1 class="subtitle">Contact me</h1>
+            <p>
+              <ion-icon name="mail-outline"></ion-icon> thi.blima19@gmail.com
+            </p>
+            <p><ion-icon name="call-outline"></ion-icon> +1 587-891-0581</p>
+            <div class="social-icons">
+              <a href="https://github.com/thiagolima19" target="_blank"><ion-icon name="logo-github"></ion-icon></a>
+              <a href="https://www.instagram.com/thiagolima19/" target="_blank"><ion-icon name="logo-instagram"></ion-icon></a>
+              <a href="https://www.facebook.com/profile.php?id=100002358005466" target="_blank"><ion-icon name="logo-facebook"></ion-icon></a>
+              <a href="https://www.linkedin.com/in/thiago-barbosa-lima-765537165/" target="_blank"><ion-icon name="logo-linkedin"></ion-icon></a>
+            </div>
+          </div>
+        </div>
+      <div class="copyright">
+        <p>
+          Copyrights © Thiago Lima. Made with
+          <ion-icon name="heart"></ion-icon> based on College Project
+        </p>
+      </div>
+    </div>
+    <script src="./script.js"></script>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>

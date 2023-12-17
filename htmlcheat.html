@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My portifolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;700&family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="cheatsheet.css" />
+  </head>
+  <body>
+    <!-- -------header section--------- -->
+    <!-- <div id="header"> -->
+      <div class="container">
+        <nav>
+          <span></span>
+          <ul id="sidemenu">
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./aboutme.html">About</a></li>
+            <li><a href="./hobbies.html">Hobbies</a></li>
+            <li><a href="./htmlcheat.html">HTML</a></li>
+            <li><a href="./csscheat.html">CSS</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <ion-icon class="fas" name="close" onclick="closemenu()"></ion-icon>
+          </ul>
+          <ion-icon class="fas" name="menu" onclick="openmenu()"></ion-icon>
+        </nav>
+      </div>
+    <!-- </div> -->
+    <!-- ---HTML, CSS and JS cheatsheet----- -->
+    <div id="cheatsheet">
+      <div class="container">
+        <h1 class="subtitle">Cheat Sheet</h1>
+        <div class="cheatsheet-list">
+          <div id="html-tag">
+            <h2>HTML</h2>
+            <div class="tag-list">
+              <div>
+                <span class="lessThan">&lt;</span
+                ><span class="tagName">!DOCTYPE html</span
+                ><span class="greatThan">&gt;</span>
+                <span> It informs the browsing about the document type.</span>
+              </div>
+              <div>
+                <span class="lessThan">&lt;</span
+                ><span class="tagName">html</span
+                ><span class="greatThan">&gt;</span>
+                <span class="lessThan">&lt;&#47;</span
+                ><span class="tagName">html</span
+                ><span class="greatThan">&gt;</span
+                ><span class="tagDescription"> Creates a HTML document.</span>
+              </div>
+              <div>
+                <span class="lessThan">&lt;</span
+                ><span class="tagName">head</span
+                ><span class="greatThan">&gt;</span>
+                <span class="lessThan">&lt;&#47;</span
+                ><span class="tagName">head</span
+                ><span class="greatThan">&gt;</span
+                ><span class="tagDescription">
+                  Sets off the title and other informations, such
+                  language.</span
+                >
+              </div>
+              <div>
+                <span class="lessThan">&lt;</span
+                ><span class="tagName">meta</span
+                ><span class="greatThan">&gt;</span
+                ><span class="tagDescription">
+                  Defines metadata about HTML document.</span
+                >
+              </div>
+              <div>
+                <span class="lessThan">&lt;</span
+                ><span class="tagName">title</span
+                ><span class="greatThan">&gt;</span>
+                <span class="lessThan">&lt;&#47;</span
+                ><span class="tagName">title</span
+                ><span class="greatThan">&gt;</span
+                ><span class="tagDescription">
+                  Sets off the title of the webpage.</span
+                >
+              </div>
+              <div>
+                <span class="lessThan">&lt;</span
+                ><span class="tagName">link</span
+                ><span class="greatThan">&gt;</span
+                ><span class="tagDescription">
+                  Defines the relationship between the current document and an
+                  external resource.</span
+                >
+              </div>
+              <div>
+                <span class="lessThan">&lt;</span
+                ><span class="tagName">script</span
+                ><span class="greatThan">&gt;</span>
+                <span class="lessThan">&lt;&#47;</span
+                ><span class="tagName">script</span
+                ><span class="greatThan">&gt;</span
+                ><span class="tagDescription">
+                  Used to embed a clients-side scripty such JavaScript.</span
+                >
+              </div>
+              <div>
+                <span class="lessThan">&lt;</span
+                ><span class="tagName">body</span
+                ><span class="greatThan">&gt;</span>
+                <span class="lessThan">&lt;&#47;</span
+                ><span class="tagName">body</span
+                ><span class="greatThan">&gt;</span
+                ><span class="tagDescription">
+                  Sets off the visible part of the webpage.</span
+                >
+              </div>
+              <div>
+                <span class="lessThan">&lt;</span><span class="tagName">a</span
+                ><span class="greatThan">&gt;</span>
+                <span class="lessThan">&lt;&#47;</span
+                ><span class="tagName">a</span
+                ><span class="greatThan">&gt;</span
+                ><span class="tagDescription">
+                  It defines a hyperlink. href=" " is where you put the link
+                  address.</span
+                >
+              </div>
+              <div>
+                <span class="lessThan">&lt;</span
+                ><span class="tagName">h1-h6</span
+                ><span class="greatThan">&gt;</span>
+                <span class="lessThan">&lt;&#47;</span
+                ><span class="tagName">h1-h6</span
+                ><span class="greatThan">&gt;</span
+                ><span class="tagDescription">
+                  Creates a headings. h1 is the most important and h6 is the
+                  least.</span
+                >
+              </div>
+              <div>
+                <span class="lessThan">&lt;</span><span class="tagName">p</span
+                ><span class="greatThan">&gt;</span>
+                <span class="lessThan">&lt;&#47;</span
+                ><span class="tagName">p</span
+                ><span class="greatThan">&gt;</span
+                ><span class="tagDescription"> It creats a new paragraph.</span>
+              </div>
+              <div>
+                <span class="lessThan">&lt;</span
+                ><span class="tagName">nav</span
+                ><span class="greatThan">&gt;</span>
+                <span class="lessThan">&lt;&#47;</span
+                ><span class="tagName">nav</span
+                ><span class="greatThan">&gt;</span
+                ><span class="tagDescription">
+                  Defines a set of navigation links.</span
+                >
+              </div>
+              <div>
+                <span class="lessThan">&lt;</span><span class="tagName">br</span
+                ><span class="greatThan">&gt;</span>
+                <span class="lessThan">&lt;&#47;</span
+                ><span class="tagName">br</span
+                ><span class="greatThan">&gt;</span
+                ><span class="tagDescription"> Inserts a line break.</span>
+              </div>
+              <div>
+                <span class="lessThan">&lt;</span
+                ><span class="tagName">div</span
+                ><span class="greatThan">&gt;</span>
+                <span class="lessThan">&lt;&#47;</span
+                ><span class="tagName">div</span
+                ><span class="greatThan">&gt;</span
+                ><span class="tagDescription">
+                  it defines a section and is used as a container to be styled
+                  by CSS.</span
+                >
+              </div>
+              <div>
+                <span class="lessThan">&lt;</span
+                ><span class="tagName">span</span
+                ><span class="greatThan">&gt;</span>
+                <span class="lessThan">&lt;&#47;</span
+                ><span class="tagName">span</span
+                ><span class="greatThan">&gt;</span
+                ><span class="tagDescription">
+                  Is used to format inline content with CSS.</span
+                >
+              </div>
+              <div>
+                <span class="lessThan">&lt;</span
+                ><span class="tagName">pre</span
+                ><span class="greatThan">&gt;</span>
+                <span class="lessThan">&lt;&#47;</span
+                ><span class="tagName">pre</span
+                ><span class="greatThan">&gt;</span
+                ><span class="tagDescription"> Defines preformatted text.</span>
+              </div>
+              <div>
+                <span class="lessThan">&lt;</span><span class="tagName">ul</span
+                ><span class="greatThan">&gt;</span>
+                <span class="lessThan">&lt;&#47;</span
+                ><span class="tagName">ul</span
+                ><span class="greatThan">&gt;</span
+                ><span class="tagDescription"> Creates an unordered list.</span>
+              </div>
+              <div>
+                <span class="lessThan">&lt;</span><span class="tagName">ol</span
+                ><span class="greatThan">&gt;</span>
+                <span class="lessThan">&lt;&#47;</span
+                ><span class="tagName">ol</span
+                ><span class="greatThan">&gt;</span
+                ><span class="tagDescription"> Creates an ordered list.</span>
+              </div>
+              <div>
+                <span class="lessThan">&lt;</span><span class="tagName">li</span
+                ><span class="greatThan">&gt;</span>
+                <span class="lessThan">&lt;&#47;</span
+                ><span class="tagName">li</span
+                ><span class="greatThan">&gt;</span
+                ><span class="tagDescription">
+                  Is used to create each item in the list.</span
+                >
+              </div>
+              <div>
+                <span class="lessThan">&lt;</span
+                ><span class="tagName">form</span
+                ><span class="greatThan">&gt;</span>
+                <span class="lessThan">&lt;&#47;</span
+                ><span class="tagName">form</span
+                ><span class="greatThan">&gt;</span
+                ><span class="tagDescription"> Difines a form.</span>
+              </div>
+              <div>
+                <span class="lessThan">&lt;</span
+                ><span class="tagName">table</span
+                ><span class="greatThan">&gt;</span>
+                <span class="lessThan">&lt;&#47;</span
+                ><span class="tagName">table</span
+                ><span class="greatThan">&gt;</span
+                ><span class="tagDescription"> Creates a table.</span>
+              </div>
+              <div>
+                <span class="lessThan">&lt;</span><span class="tagName">tr</span
+                ><span class="greatThan">&gt;</span>
+                <span class="lessThan">&lt;&#47;</span
+                ><span class="tagName">tr</span
+                ><span class="greatThan">&gt;</span
+                ><span class="tagDescription"> Defines the table header.</span>
+              </div>
+              <div>
+                <span class="lessThan">&lt;</span><span class="tagName">td</span
+                ><span class="greatThan">&gt;</span>
+                <span class="lessThan">&lt;&#47;</span
+                ><span class="tagName">td</span
+                ><span class="greatThan">&gt;</span
+                ><span class="tagDescription"> Sets each cell in a row.</span>
+              </div>
+              <div>
+                <span class="lessThan">&lt;</span
+                ><span class="tagName">button</span
+                ><span class="greatThan">&gt;</span>
+                <span class="lessThan">&lt;&#47;</span
+                ><span class="tagName">button</span
+                ><span class="greatThan">&gt;</span
+                ><span class="tagDescription">
+                  Creates a clickable button.</span
+                >
+              </div>
+              <div>
+                <span class="lessThan">&lt;</span
+                ><span class="tagName">!--</span> <span class="tagName">--</span
+                ><span class="greatThan">&gt;</span
+                ><span class="tagDescription">
+                  Creates a comment that is not showed on the webpage.</span
+                >
+              </div>
+              <div>
+                <span class="lessThan">&lt;</span
+                ><span class="tagName">img src="" alt=""</span
+                ><span class="greatThan">&gt;</span
+                ><span class="tagDescription">
+                  Is used to embed an image in an HTML page.</span
+                >
+              </div>
+              <div>
+                <span class="lessThan">&lt;</span><span class="tagName">hr</span
+                ><span class="greatThan">&gt;</span
+                ><span class="tagDescription">
+                  Is used to create a horizontal rule in the webpage.</span
+                >
+              </div>
+            </div>
+            <div class="reference">
+              <a
+                href="https://www.w3schools.com/tags/default.asp"
+                target="_blank"
+                ><ion-icon name="link-outline"></ion-icon>Know more</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- ---------contatc---------- -->
+    <div id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="contact">
+            <h1 class="subtitle">Contact me</h1>
+            <p>
+              <ion-icon name="mail-outline"></ion-icon> thi.blima19@gmail.com
+            </p>
+            <p><ion-icon name="call-outline"></ion-icon> +1 587-891-0581</p>
+            <div class="social-icons">
+              <a href="https://github.com/thiagolima19" target="_blank"><ion-icon name="logo-github"></ion-icon></a>
+              <a href="https://www.instagram.com/thiagolima19/" target="_blank"><ion-icon name="logo-instagram"></ion-icon></a>
+              <a href="https://www.facebook.com/profile.php?id=100002358005466" target="_blank"><ion-icon name="logo-facebook"></ion-icon></a>
+              <a href="https://www.linkedin.com/in/thiago-barbosa-lima-765537165/" target="_blank"><ion-icon name="logo-linkedin"></ion-icon></a>
+            </div>
+          </div>
+        </div>
+      <div class="copyright">
+        <p>
+          Copyrights © Thiago Lima. Made with
+          <ion-icon name="heart"></ion-icon> based on College Project
+        </p>
+      </div>
+    </div>
+    <script src="./script.js"></script>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>

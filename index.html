@@ -1,0 +1,74 @@
+<!-- html page as Final project of Web and internet fundamentals -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My portifolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- -------header section--------- -->
+    <div id="header">
+      <div class="container">
+        <nav>
+          <span></span>
+            <ul id="sidemenu">
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./aboutme.html">About</a></li>
+            <li><a href="./hobbies.html">Hobbies</a></li>
+            <li><a href="./htmlcheat.html">HTML</a></li>
+            <li><a href="./csscheat.html">CSS</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <ion-icon class="fas" name="close" onclick="closemenu()"></ion-icon>
+          </ul>
+          <ion-icon class="fas" name="menu" onclick="openmenu()"></ion-icon>
+        </nav>
+        <div class="header-text">
+          <p>Software Developement Student</p>
+          <h1>
+            Hi my name is <span>Thiago</span>,<br />
+            I am a Brazilian student<br />who is affictioned with<br />technology!
+          </h1>
+        </div>
+      </div>
+    </div>
+    <!-- ---------contatc---------- -->
+    <div id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="contact">
+            <h1 class="subtitle">Contact me</h1>
+            <p>
+              <ion-icon name="mail-outline"></ion-icon> thi.blima19@gmail.com
+            </p>
+            <p><ion-icon name="call-outline"></ion-icon> +1 587-891-0581</p>
+            <div class="social-icons">
+              <a href="https://github.com/thiagolima19" target="_blank"><ion-icon name="logo-github"></ion-icon></a>
+              <a href="https://www.instagram.com/thiagolima19/" target="_blank"><ion-icon name="logo-instagram"></ion-icon></a>
+              <a href="https://www.facebook.com/profile.php?id=100002358005466" target="_blank"><ion-icon name="logo-facebook"></ion-icon></a>
+              <a href="https://www.linkedin.com/in/thiago-barbosa-lima-765537165/" target="_blank"><ion-icon name="logo-linkedin"></ion-icon></a>
+            </div>
+          </div>
+        </div>
+      <div class="copyright">
+        <p>
+          Copyrights © Thiago Lima. Made with
+          <ion-icon name="heart"></ion-icon> based on College Project
+        </p>
+      </div>
+    </div>
+    <script src="./script.js"></script>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>

@@ -1,0 +1,271 @@
+/* css to handle the full screen and the small screens  */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --text-font: "Roboto", sans-serif;
+  --code-font: "IBM Plex Mono", monospace;
+  --header-color: #000000;
+  --bg-header: #ffffff;
+  --text-color: #ffffff;
+  --bg-color: #222222;
+  --tag-color: #fd3f98;
+  --about-bg: rgba(255, 255, 255, 0.2);
+  --span-color: #ffad43;
+  --btn-color: #575757;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  font-family: var(--text-font);
+}
+
+.container {
+  padding: 10px 5%;
+}
+
+nav {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  font-weight: 700;
+}
+
+nav ul li {
+  display: inline-block;
+  align-items: right;
+  justify-content: right;
+  text-align: right;
+  list-style: none;
+  margin: 10px 20px;
+}
+
+nav ul li a {
+  color: var(--bg-header);
+  text-decoration: none;
+  font-size: 24px;
+  position: relative;
+  text-shadow: var(--bg-color) 2px 2px;
+}
+
+nav ul li a::after {
+  content: "";
+  width: 0;
+  height: 3px;
+  background: var(--span-color);
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  transition: 0.5s;
+}
+nav ul li a:hover::after {
+  width: 100%;
+}
+
+/* ---------------about--------------------- */
+
+#about {
+  padding: 20px 0;
+  color: var(--text-color);
+  margin-bottom: 50px;
+}
+
+.row {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+.about-col-1 {
+  flex-basis: 40%;
+}
+
+.about-col-1 img {
+  display: block;
+  width: 50vh;
+  margin: 15px auto;
+  border-radius: 15px;
+}
+
+.about-col-2 {
+  flex-basis: 80%;
+  padding-right: 10px;
+  /* height: 50vh; */
+}
+
+.subtitle {
+  font-size: 60px;
+  font-weight: 600;
+  color: var(--text-color);
+}
+
+.tab-titles {
+  display: flex;
+  margin: 20px 0 40px;
+  color: var(--span-color);
+}
+
+.tab-links {
+  margin-right: 50px;
+  font-size: 20px;
+  font-weight: 500;
+  cursor: pointer;
+  position: relative;
+}
+
+.tab-links::after {
+  content: "";
+  width: 0;
+  height: 3px;
+  background: var(--bg-header);
+  position: absolute;
+  left: 0;
+  bottom: -8px;
+  transition: 0.5s;
+}
+
+.tab-links.active-link::after {
+  width: 50%;
+}
+
+.tab-contents ul li {
+  list-style: none;
+  margin: 10px 0;
+  font-size: 18px;
+  height: fit-content;
+}
+
+.tab-contents ul li span {
+  color: var(--span-color);
+  font-size: 16px;
+}
+
+.tab-contents {
+  display: none;
+}
+
+.tab-contents.active-tab {
+  display: block;
+}
+
+/* -------contact-------- */
+
+.contact {
+  flex-basis: 100%;
+  text-align: center;
+}
+
+.contact p {
+  display: inline-flex;
+  margin-top: 15px;
+  margin-right: 10px;
+}
+.contact p ion-icon {
+  color: var(--span-color);
+  margin-right: 15px;
+  font-size: 20px;
+}
+.social-icons {
+  margin-top: 30px;
+  text-align: center;
+}
+.social-icons a {
+  text-decoration: none;
+  font-size: 30px;
+  margin-right: 15px;
+  color: var(--btn-color);
+  display: inline-block;
+  transition: transform 0.5s;
+}
+.social-icons a:hover {
+  color: var(--bg-header);
+  transform: translateY(-5px);
+}
+
+.copyright {
+  width: 100%;
+  text-align: center;
+  padding: 18px 0;
+  background: var(--bg-color);
+  font-weight: 300;
+  margin-top: 20px;
+}
+.copyright p {
+  display: inline-flex;
+  margin-top: 15px;
+}
+.copyright ion-icon {
+  color: var(--span-color);
+  margin: 0 5px;
+  font-size: 20px;
+}
+
+/* css for small screen */
+nav .fas {
+  display: none;
+}
+
+@media only screen and (max-width: 600px) {
+  nav .fas {
+    display: block;
+    font-size: 25px;
+  }
+  nav ul {
+    background: var(--span-color);
+    position: fixed;
+    top: 0;
+    right: -200px;
+    width: 200px;
+    height: 100vh;
+    padding-top: 50px;
+    z-index: 2;
+    transition: right 0.5s;
+    color: var(--text-color);
+  }
+  nav ul li {
+    display: block;
+    margin: 25px;
+  }
+  nav ul .fas {
+    position: absolute;
+    top: 25px;
+    left: 25px;
+    cursor: pointer;
+  }
+  .subtitle {
+    font-size: 40px;
+    margin-bottom: 10px;
+  }
+
+  .about-col-1 img {
+    background-image: url(./assets/mb-profile.jpeg);
+    width: 35vh;
+    margin: 15px auto;
+  }
+  .about-col-2 {
+    flex-basis: 100%;
+    margin: 10px 20px;
+  }
+  .about-col-2 {
+    font-size: 14px;
+  }
+  .tab-links {
+    font-size: 16px;
+    margin-right: 20px;
+  }
+  .contact {
+    flex-basis: 100%;
+  }
+  .copyright {
+    font-size: 14px;
+  }
+}

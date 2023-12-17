@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My portifolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;700&family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="cheatsheet.css" />
+  </head>
+  <body>
+    <!-- -------header section--------- -->
+    <!-- <div id="header"> -->
+      <div class="container">
+        <nav>
+          <span></span>
+          <ul id="sidemenu">
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./aboutme.html">About</a></li>
+            <li><a href="./hobbies.html">Hobbies</a></li>
+            <li><a href="./htmlcheat.html">HTML</a></li>
+            <li><a href="./csscheat.html">CSS</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <ion-icon class="fas" name="close" onclick="closemenu()"></ion-icon>
+          </ul>
+          <ion-icon class="fas" name="menu" onclick="openmenu()"></ion-icon>
+        </nav>
+      </div>
+    <!-- </div> -->
+    <div id="cheatsheet">
+      <div class="container">
+        <h1 class="subtitle">Cheat Sheet</h1>
+        <div class="cheatsheet-list">
+            <div id="css-property">
+              <h2>CSS</h2>
+              
+              <div class="property-list">
+                  <div>
+                    <span class="css-id" >&#35;ID</span> selector:<span class ="tagDescription"> it is a unique identification that is attributed to an HTML element. e.g. #id{}</span></div>
+                  <div>
+                    <span class="css-class" >&#46;Class</span> selector:<span class ="tagDescription"> it is an identification that is attributed to an HTML element. e.g. .class{}</span>
+                  </div>
+                  <div>
+                    <span class="css-prop" >&#42;</span> Universal selector:<span class ="tagDescription"> selects all the elements in the HTML page. e.g. *{}</span>
+                  </div>
+                  <div>
+                    <span class="css-prop">Tag name:</span><span class ="tagDescription"> the name of the HTML tag is used for styling. e.g. p{}</span>
+                  </div>
+                  <div>
+                    <span class="css-prop">pseudo selector:</span><span class ="tagDescription"> is used to define a special state of an element. e.g. :root{}</span>
+                  </div>
+                  <div>
+                    <span class="css-prop" >align-itens:</span ><span class ="tagDescription"> specifies the alignment inside of flex container</span>
+                  </div>
+                  <div>
+                    <span class="css-prop" >animation:</span ><span class ="tagDescription"> shorthand property to all animation property.</span>
+                  </div>
+                  <div>
+                    <span class="css-prop" >animation-delay:</span ><span class ="tagDescription"> delay for start the animation.</span>
+                  </div>
+                  <div>
+                    <span class="css-prop" >animation-direction:</span ><span class ="tagDescription"> direction for the animation.</span>
+                  </div>
+                  <div>
+                    <span class="css-prop" >animation-name:</span ><span class ="tagDescription"> defines the name for the @keyframes animation.</span>
+                  </div>
+                  <div>
+                    <span class="css-prop" >aspect-ratio:</span ><span class ="tagDescription"> specify the aspect ratio for an element.</span>
+                  </div>
+                  <div>
+                    <span class="css-prop" >background:</span ><span class ="tagDescription"> shorthand property to all background property.</span>
+                  </div>
+                  <div>
+                    <span class="css-prop" >background-attachement:</span class="css-prop"><span class ="tagDescription"> sets if the image scrolls together or will be fixed.</span>
+                  </div>
+                  <div>
+                    <span class="css-prop" >background-color:</span ><span class ="tagDescription"> sets a color to the background.</span>
+                  </div>
+                  <div>
+                    <span class="css-prop" >background-image:</span ><span class ="tagDescription"> sets a image background.</span>
+                  </div>
+                  <div>
+                    <span class="css-prop" >background-repeat:</span ><span class ="tagDescription"> sets if it will be repeat.</span>
+                  </div>
+                  <div>
+                    <span class="css-prop" >background-size:</span ><span class ="tagDescription"> sets the size background image.</span>
+                  </div>
+                  <div>
+                    <span class="css-prop" >border:</span ><span class ="tagDescription"> shorthand property to all borders.</span>
+                  </div>
+                  <div>
+                    <span class="css-prop" >border-color:</span ><span class ="tagDescription"> sets the border color.</span>
+                  </div>
+                  <div>
+                    <span class="css-prop" >border-radius:</span ><span class ="tagDescription"> shorthand for all four border radius.</span>
+                  </div>
+                  <div>
+                    <span class="css-prop" >border-style:</span ><span class ="tagDescription"> sets the border style.</span>
+                  </div>
+                  <div>
+                    <span class="css-prop" >color:</span ><span class ="tagDescription"> sets the text color.</span>
+                  </div>
+                  <div>
+                    <span class="css-prop" >columns:</span ><span class ="tagDescription"> shorthand for column-width and column-count.</span>
+                  </div>
+                  <div>
+                    <span class="css-prop" >cursor:</span ><span class ="tagDescription"> sets the mouse cursor when is pointing over an element.</span>
+                  </div>
+                  <div>
+                    <span class="css-prop" >display:</span ><span class ="tagDescription"> sets how a certain HTML element should be displayed.</span>
+                  </div>
+                  <div>
+                    <span class="css-prop" >flex:</span ><span class ="tagDescription"> shorthand for flex-grow, flex-shrink, flax-basis.</span>
+                  </div>
+                  <div>
+                    <span class="css-prop" >font:</span ><span class ="tagDescription"> shorthand for font properties.</span>
+                  </div>
+                  <div>
+                    <span class="css-prop" >grid:</span ><span class ="tagDescription"> A shorthand for the grid property.</span>
+                  </div>
+                  <div>
+                    <span class="css-prop" >height:</span ><span class ="tagDescription"> sets the height of an element.</span>
+                  </div>
+                  <div>
+                    <span class="css-prop" >justify-content:</span ><span class ="tagDescription"> align items inside a flexible container.</span>
+                  </div>
+                  <div>
+                    <span class="css-prop" >justify-items:</span ><span class ="tagDescription"> align items on a grid container.</span>
+                  </div>
+                  <div>
+                    <span class="css-prop" >@keyframes:</span ><span class ="tagDescription"> specifies the animation code.</span>
+                  </div>
+                  <div>
+                    <span class="css-prop" >margin:</span ><span class ="tagDescription"> shorthand for all margins properties.</span>
+                  </div>
+                  <div>
+                    <span class="css-prop" >overflow:</span ><span class ="tagDescription"> sets what happens to an element when its content goes out of limits.</span>
+                  </div>
+                  <div>
+                    <span class="css-prop" >padding:</span ><span class ="tagDescription"> shorthand for all padding properties.</span>
+                  </div>
+                  <div>
+                    <span class="css-prop" >scroll-behaviour:</span ><span class ="tagDescription"> specifies whether goes straight to the section or in a smooth way.</span>
+                  </div>
+                  <div>
+                    <span class="css-prop" >text-align:</span ><span class ="tagDescription"> specifies the horizontal text alignment.</span>
+                  </div>
+                  <div>
+                    <span class="css-prop" >text-decoration:</span ><span class ="tagDescription"> specifies the text decoration.</span>
+                  </div>
+                  <div>
+                    <span class="css-prop" >transform:</span ><span class ="tagDescription"> applies a 2D or 3D transformation to an element.</span>
+                  </div>
+                  <div>
+                    <span class="css-prop" >transition:</span ><span class ="tagDescription"> shorthand for all transition properties.</span>
+                  </div>
+                  <div>
+                    <span class="css-prop" >translate:</span ><span class ="tagDescription"> specifies the position of an element.</span>
+                  </div>
+                  <div>
+                    <span class="css-prop" >width:</span ><span class ="tagDescription"> specifies the width of an element.</span>
+                  </div>
+                  <div>
+                    <span class="css-prop" >z-index</span ><span class ="tagDescription"> sets the stack order of a positioned element.</span>
+                  </div>   
+              </div>     
+          </div> 
+          <div class="reference">     
+              <a  href="https://www.w3schools.com/cssref/index.php" target="_blank"><ion-icon name="link-outline"></ion-icon>Know more</a>
+            </div> 
+        </div>
+      </div>
+</div>
+<!-- ---------contatc---------- -->
+    <div id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="contact">
+            <h1 class="subtitle">Contact me</h1>
+            <p>
+              <ion-icon name="mail-outline"></ion-icon> thi.blima19@gmail.com
+            </p>
+            <p><ion-icon name="call-outline"></ion-icon> +1 587-891-0581</p>
+            <div class="social-icons">
+              <a href="https://github.com/thiagolima19" target="_blank"><ion-icon name="logo-github"></ion-icon></a>
+              <a href="https://www.instagram.com/thiagolima19/" target="_blank"><ion-icon name="logo-instagram"></ion-icon></a>
+              <a href="https://www.facebook.com/profile.php?id=100002358005466" target="_blank"><ion-icon name="logo-facebook"></ion-icon></a>
+              <a href="https://www.linkedin.com/in/thiago-barbosa-lima-765537165/" target="_blank"><ion-icon name="logo-linkedin"></ion-icon></a>
+            </div>
+          </div>
+        </div>
+      <div class="copyright">
+        <p>
+          Copyrights © Thiago Lima. Made with
+          <ion-icon name="heart"></ion-icon> based on College Project
+        </p>
+      </div>
+    </div>
+    <script src="./script.js"></script>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>
